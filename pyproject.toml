@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "crewai_combined_project"  # Choose an appropriate name
+version = "0.1.0"
+description = "A combined project for CrewAI and LangChain Serve integration"
+authors = ["Greg Lindberg <greglindberg@gmail.com>"]  # Update as necessary
+readme = "README.md"
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<=3.13"  # This covers both ^3.11 from one and the range from the other
+crewai-tools = "^0.0.12"
+langchain = "^0.1.9"
+langserve = {extras = ["server"], version = ">=0.0.30"}  # Assuming this is the more specific requirement
+langchain-cli = "^0.0.21"
+duckduckgo-search = "^4.5.0"
+crewai = "^0.14.4"
+uvicorn = "^0.23.2"  # Assuming you need Uvicorn for serving
+pydantic = ">=2.4.2,<3.0.0"  # Adjusted line
+langchain-core = "^0.1.27"
+
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
