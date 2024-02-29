@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "crewai_combined_project"  # Choose an appropriate name
+name = "crewai_api"  
 version = "0.1.0"
 description = "A combined project for CrewAI and LangChain Serve integration"
 authors = ["Greg Lindberg <greglindberg@gmail.com>"]  # Update as necessary

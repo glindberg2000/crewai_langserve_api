@@ -1,9 +1,6 @@
 import os
 from crewai import Agent, Task, Crew, Process
 
-# os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
-
-# Attempt to read the API key from an environment variable
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # You can choose to use a local model through Ollama for example. See https://docs.crewai.com/how-to/LLM-Connections/ for more information.
